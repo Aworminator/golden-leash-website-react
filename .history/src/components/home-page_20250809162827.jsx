@@ -7,11 +7,11 @@ function HomePage() {
         <div>
           <div className="logo-container">
             <img
-              src="/assets/images/GoldenLeashLogo-No-Nose.png"
+              src="/assets/images/GoldenLeashLogo-No Nose.png"
               className="logo"
             />
             <img
-              src="/assets/images/GoldenLeashLogo-Nose.png"
+              src="/assets/images/GoldenLeashLogo Nose.png"
               className="nose"
               alt=""
             />
