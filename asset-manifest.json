@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/golden-leash-website-react/static/css/main.1ea50ae3.css",
+    "main.js": "/golden-leash-website-react/static/js/main.f9f4dd9a.js",
+    "static/js/453.1d7ad4a1.chunk.js": "/golden-leash-website-react/static/js/453.1d7ad4a1.chunk.js",
+    "index.html": "/golden-leash-website-react/index.html",
+    "main.1ea50ae3.css.map": "/golden-leash-website-react/static/css/main.1ea50ae3.css.map",
+    "main.f9f4dd9a.js.map": "/golden-leash-website-react/static/js/main.f9f4dd9a.js.map",
+    "453.1d7ad4a1.chunk.js.map": "/golden-leash-website-react/static/js/453.1d7ad4a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ea50ae3.css",
+    "static/js/main.f9f4dd9a.js"
+  ]
+}
