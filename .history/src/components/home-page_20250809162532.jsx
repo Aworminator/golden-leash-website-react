@@ -11,7 +11,7 @@ function HomePage() {
               className="logo"
             />
             <img
-              src="./assets/images/GoldenLeashLogo Nose.png"
+              src="/assets/images/GoldenLeashLogo Nose.png"
               className="nose"
               alt=""
             />
