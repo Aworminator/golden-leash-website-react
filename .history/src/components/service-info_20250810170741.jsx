@@ -1,7 +1,9 @@
 function Services({ children, onSelect }) {
   return (
     <>
-      <i className={`fa-solid fa-${children} icon`} onClick={onSelect}></i>
+      <i className="fa-solid fa icon" onClick={onSelect}>
+        {children}
+      </i>
     </>
   );
 }

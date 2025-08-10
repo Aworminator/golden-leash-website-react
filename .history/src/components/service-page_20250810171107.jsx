@@ -21,16 +21,10 @@ function ServicePage() {
         <Services onSelect={() => handleSelect("Walks")}>paw</Services>
         <Services onSelect={() => handleSelect("Boarding")}>house</Services>
         <Services onSelect={() => handleSelect("Grooming")}>bath</Services>
-        <Services onSelect={() => handleSelect("Daycare")}>dog</Services>
+        <Services onSelect={() => handleSelect("Daycare")}>paw</Services>
       </div>
 
-      <div
-        key={selectedTopic}
-        className={`service-info info ${
-          selectedTopic ? "service-animate" : ""
-        }`}
-        id="boarding"
-      >
+      <div className="service-info info" id="boarding">
         {!selectedTopic ? (
           <h3>Click above for more info </h3>
         ) : (

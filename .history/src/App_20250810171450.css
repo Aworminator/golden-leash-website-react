@@ -65,6 +65,7 @@ h2 {
   background-color: rgb(249, 249, 240);
 }
 
+
 .services,
 .staff,
 .contact,
@@ -193,9 +194,10 @@ li {
   background-color: rgba(229, 229, 229, 0.261);
   border-radius: 10px;
   padding: 5px;
+  
 }
 
-.service-animate {
+.service-info:activ {
   animation: slide-fwd-tr 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 

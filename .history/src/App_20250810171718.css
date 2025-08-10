@@ -195,9 +195,7 @@ li {
   padding: 5px;
 }
 
-.service-animate {
-  animation: slide-fwd-tr 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
+.ser
 
 .service-info p {
   max-width: 500px;

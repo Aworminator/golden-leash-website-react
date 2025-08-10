@@ -9,6 +9,8 @@ function ServicePage() {
   function handleSelect(selectedInfo) {
     // selectedInfo => "Walks", "Boarding", "Groming", "Daycare".
     setSelectedTopic(selectedInfo);
+
+  
   }
   return (
     <section
@@ -24,13 +26,7 @@ function ServicePage() {
         <Services onSelect={() => handleSelect("Daycare")}>dog</Services>
       </div>
 
-      <div
-        key={selectedTopic}
-        className={`service-info info ${
-          selectedTopic ? "service-animate" : ""
-        }`}
-        id="boarding"
-      >
+      <div className="service-info info" style={selectedTopic === selectedTopic ? serviceStyle : null} id="boarding">
         {!selectedTopic ? (
           <h3>Click above for more info </h3>
         ) : (

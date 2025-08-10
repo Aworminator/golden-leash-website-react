@@ -18,19 +18,13 @@ function ServicePage() {
     >
       <h1>Services</h1>
       <div className="icon-container">
-        <Services onSelect={() => handleSelect("Walks")}>paw</Services>
-        <Services onSelect={() => handleSelect("Boarding")}>house</Services>
-        <Services onSelect={() => handleSelect("Grooming")}>bath</Services>
-        <Services onSelect={() => handleSelect("Daycare")}>dog</Services>
+        <Services onSelect={() => handleSelect("Walks")}></Services>
+        <Services onSelect={() => handleSelect("Boarding")}>Boarding</Services>
+        <Services onSelect={() => handleSelect("Grooming")}>Grooming</Services>
+        <Services onSelect={() => handleSelect("Daycare")}>Daycare</Services>
       </div>
 
-      <div
-        key={selectedTopic}
-        className={`service-info info ${
-          selectedTopic ? "service-animate" : ""
-        }`}
-        id="boarding"
-      >
+      <div className="service-info info" id="boarding">
         {!selectedTopic ? (
           <h3>Click above for more info </h3>
         ) : (
