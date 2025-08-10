@@ -1,0 +1,369 @@
+h1 {
+  font-family: "Fredoka", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace <weight> with a valid value */
+  font-style: normal;
+  color: #bfb65a;
+  font-variation-settings: "wdth" 100;
+  text-align: center;
+  font-size: 4em;
+}
+
+/* Everything is looking great, just add paw background repate */
+
+h2 {
+  text-align: center;
+}
+
+.clickForInfo {
+  font-family: "Fredoka", serif;
+  color: #bfb65a;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.home-page {
+  border: black solid 5px;
+  min-height: 50vh;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url("./assets/images/Paws.png");
+  background-repeat: no-repeat;
+  background-position: 80%;
+}
+
+@keyframes paws-bg-move {
+  0% {
+    background-position: 160%;
+  }
+  25% {
+    background-position: 140%;
+  }
+  50% {
+    background-position: 120%;
+  }
+  75% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 80%;
+  }
+}
+
+.home-page {
+  animation: paws-bg-move 5s;
+}
+
+.services,
+.staff,
+.contact,
+.our-story {
+  border: black solid 3px;
+  min-height: 600px;
+}
+
+.logo-container {
+  position: relative;
+  display: inline-block; /* or block, as needed */
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.nose {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  animation: nose-move 4s ease-in-out;
+}
+@keyframes nose-move {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  25% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  75% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.list {
+  font-size: 3em;
+  padding: 50px;
+}
+
+li {
+  font-family: "Fredoka", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace <weight> with a valid value */
+  font-style: normal;
+  color: #bfb65a;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.3em;
+  margin-bottom: 80px;
+  text-shadow: 3px 3px 0px rgba(191, 183, 90, 0.336),
+    0 0 16px rgba(191, 182, 90, 0.25);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  background-color: #bfb65a;
+  width: 100px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  margin: 30px;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon:hover,
+.list-item:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+.icon:active,
+.list-item:active {
+  transform: scale(0.9);
+  transition: transform 0.2s;
+}
+
+.service-info,
+.story-info {
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 100px;
+}
+
+.story-info {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 10;
+  background-color: #ececec;
+}
+
+.service-info {
+  max-width: 1000px;
+  /* width: 100%; */
+  margin: 80px auto;
+  background-color: rgb(229, 229, 229);
+  border-radius: 10px;
+  padding: 5px;
+  animation: slide-fwd-tr 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.service-info p {
+  max-width: 500px;
+  /* width: 1000%; */
+  margin: 50px auto;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  border: none;
+  border-bottom: 10px solid #bfb65a;
+  border-right: 10px solid #bfb65a;
+  border-top: 1px solid #bfb65a;
+  border-left: 1px solid #bfb65a;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.profile-pic {
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  width: 200px;
+}
+
+.profile-pic:hover {
+  transform: scale(1.15);
+  transition: transform 0.2s;
+}
+
+#staff-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.staff-info {
+  padding: 30px;
+  font-size: 1.1em;
+}
+
+.address-phone {
+  text-align: center;
+}
+
+.contact {
+  font-size: 1.3em;
+}
+
+@keyframes slide-fwd-tr {
+  0% {
+    opacity: 0%;
+    transform: translateZ(180px) translateY(120px) translateX(-120px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateZ(0px) translateY(0px) translateX(0px);
+  }
+}
+
+@media (max-width: 900px) {
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    font-size: 0.8em;
+    width: 50%;
+  }
+
+  .icon {
+    font-size: 1.4em;
+    margin: 15px;
+  }
+
+  .staff-info {
+    width: 250px;
+    font-size: 0.9em;
+    overflow: visible;
+    padding: 10px;
+  }
+
+  .service-info {
+    width: 300px;
+  }
+
+  .card {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  li {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    padding: 5px;
+  }
+
+  .fa-mobile,
+  .fa-phone {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 18px 8px 14px 8px;
+    max-width: 95vw;
+  }
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 500px;
+  margin: 40px auto 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(191, 182, 90, 0.15);
+  padding: 32px 28px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.contact-form label {
+  font-size: 1.1em;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 12px;
+  border: 1.5px solid black;
+  border-radius: 8px;
+  font-size: 1em;
+  font-family: inherit;
+  transition: border 0.2s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 2px solid black;
+}
+.contact-btn {
+  background: #bfb65a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.1em;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px rgba(191, 182, 90, 0.12);
+  transition: background 0.2s, transform 0.2s;
+}
+.contact-btn:hover {
+  background: #a49e4a;
+  transform: translateY(-2px) scale(1.03);
+}
