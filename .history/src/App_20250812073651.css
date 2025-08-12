@@ -73,6 +73,8 @@ h2 {
   min-height: 600px;
 }
 
+
+
 .logo-container {
   position: relative;
   display: inline-block; /* or block, as needed */
@@ -188,7 +190,7 @@ li {
   margin: 80px auto;
   background-color: rgba(229, 229, 229, 0.261);
   border-radius: 10px;
-  padding: 0px 150px 0px 150px;
+  padding: 5px;
 }
 
 .service-animate {
@@ -203,8 +205,8 @@ li {
 .info-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
   gap: 40px;
 }
 

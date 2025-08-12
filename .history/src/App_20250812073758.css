@@ -188,7 +188,7 @@ li {
   margin: 80px auto;
   background-color: rgba(229, 229, 229, 0.261);
   border-radius: 10px;
-  padding: 0px 150px 0px 150px;
+  padding: 5px;
 }
 
 .service-animate {
@@ -204,7 +204,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 100%;
+  width: ;
   gap: 40px;
 }
 

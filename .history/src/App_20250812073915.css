@@ -188,7 +188,10 @@ li {
   margin: 80px auto;
   background-color: rgba(229, 229, 229, 0.261);
   border-radius: 10px;
-  padding: 0px 150px 0px 150px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .service-animate {

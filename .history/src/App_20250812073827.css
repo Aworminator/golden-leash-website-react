@@ -184,11 +184,11 @@ li {
 }
 
 .service-info {
-  max-width: 1000px;
+  max-width: 1500px;
   margin: 80px auto;
   background-color: rgba(229, 229, 229, 0.261);
   border-radius: 10px;
-  padding: 0px 150px 0px 150px;
+  padding: 5px;
 }
 
 .service-animate {

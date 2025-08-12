@@ -10,9 +10,18 @@ function ServicePage() {
     // selectedInfo => "Walks", "Boarding", "Groming", "Daycare".
     setSelectedTopic(selectedInfo);
   }
+  const isDesktop = window.innerWidth >= 1024;
 
   return (
-    <section className="services" id="services">
+    <section
+      className="services"
+      id="services"
+      style={
+        selectedTopic && isDesktop
+          ? { minHeight: "1500px" }
+          : { minHeight: "200px" }
+      }
+    >
       <h1>Services</h1>
       <div className="icon-container">
         <Services onSelect={() => handleSelect("Walks")}>paw</Services>
@@ -21,24 +30,22 @@ function ServicePage() {
         <Services onSelect={() => handleSelect("Daycare")}>dog</Services>
       </div>
 
-      <div className="info-container">
-        <div
-          key={selectedTopic}
-          className={`service-info info ${
-            selectedTopic ? "service-animate" : ""
-          }`}
-          id="boarding"
-        >
-          {!selectedTopic ? (
-            <h3>Click above for more info </h3>
-          ) : (
-            <>
-              <h1>{serviceInfo[selectedTopic]?.title}</h1>
-              <h2>{serviceInfo[selectedTopic]?.price}</h2>
-              <p>{serviceInfo[selectedTopic]?.info}</p>
-            </>
-          )}
-        </div>
+      <div
+        key={selectedTopic}
+        className={`service-info info ${
+          selectedTopic ? "service-animate" : ""
+        }`}
+        id="boarding"
+      >
+        {!selectedTopic ? (
+          <h3>Click above for more info </h3>
+        ) : (
+          <>
+            <h1>{serviceInfo[selectedTopic]?.title}</h1>
+            <h2>{serviceInfo[selectedTopic]?.price}</h2>
+            <p>{serviceInfo[selectedTopic]?.info}</p>
+          </>
+        )}
       </div>
     </section>
   );
