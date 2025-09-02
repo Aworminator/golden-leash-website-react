@@ -89,26 +89,27 @@ h2 {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  --nose-scale: 1;
+  transform: translate(-50%, -50%) scale(var(--nose-scale));
   width: 100%;
   height: auto;
   animation: nose-move 4s ease-in-out;
 }
 @keyframes nose-move {
   0% {
-    transform: translate(-50%, -50%) scale(1);
+    --nose-scale: 1;
   }
   25% {
-    transform: translate(-50%, -50%) scale(1.2);
+    --nose-scale: 1.2;
   }
   50% {
-    transform: translate(-50%, -50%) scale(1.1);
+    --nose-scale: 1.1;
   }
   75% {
-    transform: translate(-50%, -50%) scale(1.2);
+    --nose-scale: 1.2;
   }
   100% {
-    transform: translate(-50%, -50%) scale(1);
+    --nose-scale: 1;
   }
 }
 
@@ -298,7 +299,8 @@ li {
   }
 
   .service-info {
-    width: 300px;
+    max-width: 300px;
+    padding: 0 70px;
   }
 
   .card {

@@ -34,7 +34,11 @@ function ServicePage() {
           ) : (
             <>
               <h1>{serviceInfo[selectedTopic]?.title}</h1>
-              <h2>{serviceInfo[selectedTopic]?.price}</h2>
+              <h2
+                dangerouslySetInnerHTML={{
+                  __html: serviceInfo[selectedTopic]?.price,
+                }}
+              />
               <p>{serviceInfo[selectedTopic]?.info}</p>
             </>
           )}

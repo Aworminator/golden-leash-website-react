@@ -39,7 +39,7 @@ const staffMembers = [
 const serviceInfo = {
   Daycare: {
     title: "Daycare",
-    price: "$35",
+    price: "$35 Full Day (6-9 Hours)<br />$25 Half Day (3-5 Hours)",
     info: [
       "At The Golden Leash, we bring personalized care directly to you! Our team will stop by to check on your dog and take them for a walk tailored to their needs. Each walk typically lasts around 45 minutes, giving your pup plenty of exercise and attention.",
       "Your dog's safety and well-being are our top priorities. That’s why we monitor the weather closely, ensuring your furry friend isn’t exposed to unsafe conditions. We avoid walks in temperatures below 28°F, and during extreme heat, we’ll adjust walk times to protect your dog’s paws from hot sidewalks. Because your dog deserves the very best care—rain, shine, or snow!",
@@ -47,7 +47,7 @@ const serviceInfo = {
   },
   Walks: {
     title: "Walks",
-    price: "$25",
+    price: "<small>(Starting at)</small><br />$25",
     info: [
       "At The Golden Leash, we bring personalized care directly to you! Our team will stop by to check on your dog and take them for a walk tailored to their needs. Each walk typically lasts around 45 minutes, giving your pup plenty of exercise and attention.",
       "Your dog's safety and well-being are our top priorities. That’s why we monitor the weather closely, ensuring your furry friend isn’t exposed to unsafe conditions. We avoid walks in temperatures below 28°F, and during extreme heat, we’ll adjust walk times to protect your dog’s paws from hot sidewalks. Because your dog deserves the very best care—rain, shine, or snow!",
@@ -55,7 +55,7 @@ const serviceInfo = {
   },
   Boarding: {
     title: "Boarding",
-    price: "$75 Per/Night",
+    price: "$75 Per/Night <br /> $80 Per/Night (In Home Boarding)",
     info: [
       "At The Golden Leash, our boarding service is truly cage-free—your dog enjoys a comfortable, home-like environment 24/7 with no kennels or crates. We believe every pup deserves freedom, companionship, and personalized attention, so they’re never confined and always part of the family.",
       "For dogs who prefer familiar surroundings, we also offer in-home boarding. Our trusted staff can stay at your home, ensuring your dog’s routine and comfort are maintained while you’re away. Whether at our place or yours, your dog receives loving care, playtime, and relaxation—just like they’re at home!",
@@ -63,7 +63,8 @@ const serviceInfo = {
   },
   Grooming: {
     title: "Grooming",
-    price: "$40 Basic Bath",
+    price:
+      "<small>(Starting at)</small> <br /> $40 Basic Bath <br /> $50 Deshed ",
     info: [
       "At The Golden Leash, our grooming service is designed to keep your dog looking and feeling their best in a stress-free, cage-free environment. We offer baths, brush-outs, nail trims, ear cleaning, and more—always tailored to your pup’s needs and comfort.",
       "Our experienced staff uses gentle techniques and high-quality products to ensure a safe, positive experience for every dog. Whether your pup needs a quick freshen-up or a full spa treatment, we provide personalized care with plenty of love and attention. Book a grooming session and let your dog shine!",
